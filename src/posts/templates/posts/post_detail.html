@@ -1,0 +1,22 @@
+{% extends "posts/base.html" %}
+
+{% block content %}
+    <section class="container p-4">
+        <article style="max-width:680px;" class="m-auto card">
+            <div class="card-header">
+                <h2 class="d-flex align-items-center">
+                    <span style="font-family: 'Russo One', sans-serif" class="fs-2 me-2">{{ post.title }}</span>
+                    <a href="/" class="btn btn-primary fw-bold">Retornar</a>
+                </h2>
+                {% if post.published_date %}
+                    <div class="fs-6">
+                        {{ post.published_date }}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="card-body">
+                <p class="fs-4">{{ post.text|linebreaksbr }}</p>
+            </div>
+        </article>
+    </section>
+{% endblock %}

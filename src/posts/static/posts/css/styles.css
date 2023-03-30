@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+    background-color: #F3F3F3;
+}
+
+.header {
+    background-color: #C25100;
+    padding: 1.2rem;
+    font-family: 'Russo One', sans-serif;
+}
+
+.header__link {
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+
+.posts {
+    max-width: 1024px;
+    margin: auto;
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.2rem;
+}
+
+.link__wrapper {
+    color: #000000;
+    text-decoration: none;
+}
+
+.post {
+    border: 2px solid #000000;
+    padding: 1.2rem;
+    background-color: #FFFFFF;
+}
+
+.post__date {
+    color: #828282;
+}
+
+.post__title {
+    font-size: 1.75rem;
+    font-family: 'Russo One', sans-serif;
+    color: #0D6EFD;
+    transition: color 0.3s ease-out;
+}
+
+.post__title:hover {
+    color: #0B5ED7;
+}
